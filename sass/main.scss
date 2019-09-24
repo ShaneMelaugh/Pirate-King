@@ -1,0 +1,582 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mainButton {
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+}
+
+
+/*/ SCREEN 1 /*/ .screen1 {
+  &__1 {
+    height: 100vh;
+    width: 100vw;
+    &--0 {
+      position: absolute;
+      height: auto;
+    }
+    &--1 {
+      position: absolute;
+      height: auto;
+    }
+    &--2 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.7s ease 7s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--3 {
+      position: absolute;
+      height: auto;
+    }
+    &--4 {
+      position: absolute;
+      height: auto;
+      animation: flicker 1s ease 0s infinite normal forwards running;
+    }
+    &--5 {
+      position: absolute;
+      height: auto;
+    }
+    &--6 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.7s ease 5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--7 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.7s ease 9s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+  }
+}
+@keyframes wealth {
+  0% {
+    filter: opacity(0%);
+  }
+  25% {
+    filter: opacity(25%);
+  }
+  50% {
+    filter: opacity(50%);
+  }
+  75% {
+    filter: opacity(75%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    filter: opacity(100%);
+  }
+  15% {
+    filter: opacity(80%);
+  }
+  25% {
+    filter: opacity(75%);
+  }
+  35% {
+    filter: opacity(79%);
+  }
+  45% {
+    filter: opacity(70%);
+  }
+  55% {
+    filter: opacity(68%);
+  }
+  65% {
+    filter: opacity(75%);
+  }
+  75% {
+    filter: opacity(82%);
+  }
+  85% {
+    filter: opacity(88%);
+  }
+  95% {
+    filter: opacity(95%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
+}
+
+@keyframes slide {
+  from { background-position: 0 100%, 0 100%;}
+  to { background-position: 0 100%, -1500px 100%; }
+}
+
+@keyframes lowerSword {
+  from {
+    margin: -500px 300px 0 0;
+    transform: rotate(90deg);
+    filter: opacity(0%);
+  }
+  to {
+    margin: 0 0 0 0;
+    transform: rotate(0deg);
+    filter: opacity(100%);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    margin: 0px 0 0 0;
+  }
+
+  50% {
+    margin: -6px 0 0 0;
+  }
+
+  100% {
+    margin: -6px 0 0 0;
+  }
+}
+
+@keyframes lightning {
+  0% {
+    filter: opacity(0%);
+  }
+  95% {
+    filter: opacity(100%);
+  }
+  100% {
+    filter: opacity(0%);
+  }
+}
+
+@keyframes hatFall {
+  0% {
+    margin-top: -600px;
+    transform: rotate(35deg);
+    filter: opacity(0%);
+  }
+  10% {
+    margin-top: -540px;
+    transform: rotate(-35deg);
+    filter: opacity(100%);
+  }
+  20% {
+    margin-top: -480px;
+    transform: rotate(35deg);
+  }
+  30% {
+    margin-top: -420px;
+    transform: rotate(-35deg);
+  }
+  40% {
+    margin-top: -360px;
+    transform: rotate(35deg);
+  }
+  50% {
+    margin-top: -300px;
+    transform: rotate(-35deg);
+  }
+  60% {
+    margin-top: -240px;
+    transform: rotate(35deg);
+  }
+  70% {
+    margin-top: -180px;
+    transform: rotate(-35deg);
+  }
+  80% {
+    margin-top: -120px;
+    transform: rotate(35deg);
+  }
+  90% {
+    margin-top: -60px;
+    transform: rotate(-35deg);
+  }
+  100% {
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hideAgain {
+  0% {
+    filter: opacity(0%);
+  }
+  10% {
+    filter: opacity(10%);
+  }
+  25% {
+    filter: opacity(100%);
+  }
+  50% {
+    filter: opacity(100%);
+  }
+  75% {
+    filter: opacity(100%);
+  }
+  90% {
+    filter: opacity(100%);
+  }
+  100% {
+    filter: opacity(0%);
+  }
+}
+
+
+
+/*/ SCREEN 2 /*/ .screen2 {
+  &__2 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/screens/screen2/1.svg"),
+                      url("/screens/screen2/2.svg"),
+                      url("/screens/screen2/0.svg");
+    background-size: auto;
+    background-repeat: repeat-x, repeat-x, repeat-x;
+    background-position: 0 100%, 0 100%, 0 100%;
+    animation: slide 70s linear infinite;
+    &--0 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--1 {
+      position: absolute;
+      height: auto;
+      animation: show 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--2 {
+      position: absolute;
+      height: auto;
+      animation: show 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--3 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--4 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--5 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--6 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--7 {
+      position: absolute;
+      height: auto;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+    &--8 {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      animation: wealth 0.3s ease 13.5s 1 normal forwards running;
+      filter: opacity(0%);
+    }
+  }
+}
+
+
+/*/ SCREEN 3 /*/ .screen3 {
+                   &__3 {
+                     height: 100vh;
+                     width: 100vw;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                       animation: show 0.3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                       animation: show 0.3s ease 19.5s 1 normal forwards running;
+                     }
+                     &--3 {
+                       position: absolute;
+                       height: auto;
+                       animation: breathe 1s ease-in-out 19.5s infinite normal forwards running;
+                     }
+                     &--4 {
+                       position: absolute;
+                       height: auto;
+                       animation: lowerSword 3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--5 {
+                       position: absolute;
+                       height: auto;
+                       animation: lowerSword 3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--6 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--7 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 18s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--8 {
+                       position: absolute;
+                       height: 100%;
+                       width: 100%;
+                       animation: wealth 0.3s ease 19.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                   }
+                 }
+
+/*/ SCREEN 4 /*/ .screen4 {
+                   &__4 {
+                     height: 100vh;
+                     width: 100vw;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 23.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 23.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 23.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                   }
+                 }
+
+/*/ SCREEN 5 /*/ .screen5 {
+                   &__5 {
+                     height: 100vh;
+                     width: 100vw;
+                     background-image: url("/screens/screen5/4.svg"),
+                     url("/screens/screen5/3.svg"),
+                     url("/screens/screen5/2.svg"),
+                     url("/screens/screen5/0.svg");
+                     background-size: auto;
+                     background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+                     background-position: 0 100%, 0 100%, 0 100%, 0 100%;
+                     animation: slide 70s linear infinite;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                     }
+                     &--3 {
+                       position: absolute;
+                       height: auto;
+                     }
+                     &--4 {
+                       position: absolute;
+                       height: auto;
+                     }
+                     &--5 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 3s ease 31.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--6 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 31.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--7 {
+                       position: absolute;
+                       height: auto;
+                       animation: lightning 0.3s ease-in-out 34.5s 1 normal none running;
+                       filter: opacity(0%);
+                       margin-top: -100px;
+                     }
+                     &--8 {
+                       position: absolute;
+                       height: 100%;
+                       width: 100%;
+                       animation: wealth 0.3s ease 31.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--9 {
+                       position: absolute;
+                       height: 100%;
+                       width: 100%;
+                       animation: wealth 0.3s ease 31.5s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                   }
+                 }
+
+/*/ SCREEN 6 /*/ .screen6 {
+                   &__6 {
+                     height: 100vh;
+                     width: 100vw;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 42s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 45s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 45s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--3 {
+                       position: absolute;
+                       height: auto;
+                       animation: hatFall 10s ease 45s 1 normal forwards running;
+                       margin-top: -600px;
+                     }
+                   }
+                 }
+
+/*/ SCREEN 7 /*/ .screen7 {
+                   &__7 {
+                     height: 100vh;
+                     width: 100vw;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 58s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 58s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.1s ease 58s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--3 {
+                       position: absolute;
+                       height: auto;
+                       animation: hideAgain 15s ease 66s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--4 {
+                       position: absolute;
+                       height: auto;
+                       animation: hideAgain 15s ease 66s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--5 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 60s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                   }
+                 }
+
+/*/ SCREEN 8 /*/ .screen8 {
+                   &__8 {
+                     height: 100vh;
+                     width: 100vw;
+                     &--0 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 83s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--1 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 83s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--2 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 83s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--3 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.3s ease 83s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--4 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 4s ease 90s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--5 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.5s ease 98s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                     &--6 {
+                       position: absolute;
+                       height: auto;
+                       animation: wealth 0.5s ease 110s 1 normal forwards running;
+                       filter: opacity(0%);
+                     }
+                   }
+                 }
+
+
+audio {
+  display: none !important;
+}
